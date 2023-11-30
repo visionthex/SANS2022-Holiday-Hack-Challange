@@ -8,8 +8,6 @@
 - [Windows Event Logs](#windows)
 - [Suricata Regatta](#suricata)
 
-<br><br>
-
 <h3 id="wireshark">Wireshark Phishing</h3>
 
 This all started when I clicked on a link in my email. Can you help me? Yes, I would be able to help you with this situation.
@@ -42,7 +40,6 @@ To find the Country Codes I referenced the ISO3166 to convert the codes to an ac
 
 Is the host infected? This would definitely be a Yes, that the host is infected.
 
-<br><br>
 
 <h3 id="windows">Windows Event Logs</h3>
 
@@ -76,7 +73,6 @@ What is the Event ID of the log that shows the actual command line used to delet
 
 What is the secret ingredient? The secret ingredient was Honey before it was modified and turned to Fish Oil.
 
-<br><br>
 
 <h3 id="suricata">Suricata Regatta</h3>
 
