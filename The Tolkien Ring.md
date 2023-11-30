@@ -30,4 +30,4 @@ What file is saved to the infected host? When you open the saved app.php in VBCo
 
 ![Image4](https://github.com/visionthex/SANS2022-Holiday-Hack-Challange/blob/main/Images/TheTolkienRing/image4.jpg "app.php script | File: Ref_Sept.24-2020.zip")
 
-Attackers used bad TLS certificates in the traffic. Which countries where they registered to? To find this answer you would need to do a little digging on how to get the set of TLS certificates which is a handshake with the server. I The SSL/TLS handshake | Packet Analysis with Wireshark and find the server certificate for a Wireshark filter. I used this filter in Wireshark `ssl.handshake.type == 11`
+Attackers used bad TLS certificates in the traffic. Which countries where they registered to? To find this answer you would need to do a little digging on how to get the set of TLS certificates which is a handshake with the server. I The [SSL/TLS handshake | Packet Analysis with Wireshark](https://subscription.packtpub.com/book/cloud-and-networking/9781785887819/4/ch04lvl1sec27/the-ssl-tls-handshake) and find the server certificate for a Wireshark filter. I used this filter in Wireshark `ssl.handshake.type == 11`
