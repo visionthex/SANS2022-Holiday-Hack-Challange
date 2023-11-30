@@ -2,5 +2,8 @@
 
 # SANS 2022 HOLIDAY HACK CHALLENGE REPORT
 
-### Table of 
-[The Tolkien Ring](https://github.com/visionthex/SANS2022-Holiday-Hack-Challange/blob/main/The%20Tolkien%20Ring.md)
+#### Table of Contents
+
+- [The Tolkien Ring](https://github.com/visionthex/SANS2022-Holiday-Hack-Challange/blob/main/The%20Tolkien%20Ring.md)
+- [Windows Event Logs](#windows)
+- [Suricata Regatta](#suricata)
