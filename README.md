@@ -5,5 +5,5 @@
 #### Table of Contents
 
 - [The Tolkien Ring](https://github.com/visionthex/SANS2022-Holiday-Hack-Challange/blob/main/Chapters/TheTolkienRing.md)
-- [Place Holder](#windows)
+- [The Elfen Ring](https://github.com/visionthex/SANS2022-Holiday-Hack-Challange/blob/main/Chapters/TheElfenRing.md)
 - [Place Holder](#suricata)
