@@ -39,3 +39,72 @@ HEX VALUE: `082bb339ec19de4935867`
 ![image5](https://github.com/visionthex/SANS2022-Holiday-Hack-Challange/blob/main/Images/TheElfenRingImages/image5.jpg "HEX VALUE: 082bb339ec19de4935867")
 
 <h3 id="jolly">Jolly CI/CD</h3>
+
+Greetings Noble Player, 
+
+Many thanks for answering our desperate cry for help! You may have heard that some evil Sporcs have opened a webstore selling counterfeit banners and flags of the many noble houses found in the land of the North! They have leveraged some dastardly technology to power their storefront, and this technology is known as PHP! 
+
+***gasp*** 
+
+This storefront utilizes a truly despicable number of resources to keep the website up. And there is only a certain type of Christmas Magic capable of powering such a thing… an Elven Ring! Along with PHP there is something new we've not yet seen in our land. A technology called Continuous Integration and Continuous Deployment! Be wary! Many fair elves have suffered greatly but in doing so, they've managed to secure you a persistent connection on an internal network. BTW take excellent notes! Should you lose your connection or be discovered and evicted the elves can work to re-establish persistence. In fact, the sound off fans and the sag in lighting tells me all the systems are booting up again right now. Please, for the sake of our Holiday help us recover the Ring and save Christmas!
+
+Using the clue that was given, I was able to clone the repository of the `gitlab.flag.net.internal` using the command `git clone git@gitlab.flag.net.internal/rings-of-powder/wordpress.flag.net.internal.git`
+
+![image6](https://github.com/visionthex/SANS2022-Holiday-Hack-Challange/blob/main/Images/TheElfenRingImages/image6.jpg "Command: git clone http://gitlab.flag.net.internal/rings-of-powder/wordpress.flag.net.internal.git")
+
+![image7](https://github.com/visionthex/SANS2022-Holiday-Hack-Challange/blob/main/Images/TheElfenRingImages/image7.jpg "Command: ls")
+
+In order for me to mover further I would have to reference how to start using git and using git with ssh. Once, I am in the cloned repository for `wordpress.flag.net.internal` I would be able to use the command git log in order to get a log of what commits where pushed to the Git-Lab repository.
+
+![image8](https://github.com/visionthex/SANS2022-Holiday-Hack-Challange/blob/main/Images/TheElfenRingImages/image8.jpg "Command: git log | shows the log of commits")
+
+The next step is to check out a commit that looks interesting. The first commit that looks interesting is the whoops commit which is `[commit e19f653bde9ea3de6af21a587e41e7a909db1ea5]`. Using the command git show Hex value I would be able to see the contents of the commit. For the whoops commit it had ssh private and public keys attached but at the same time this was deleted out of the repo. So, the next step would be to check out the next commit which is `updated wp-config [commit abdea0ebb21b156c01f7533cea3b895c26198c98]`. Using the command `git show abdea0ebb21b156c01f7533cea3b895c26198c98`.
+
+![image9](https://github.com/visionthex/SANS2022-Holiday-Hack-Challange/blob/main/Images/TheElfenRingImages/image9.jpg "Command: git show abdea0ebb21b156c01f7533cea3b895c26198c98")
+
+Now we have a commit with the right private and public keys that can be used to private to the other machine. The commands used to create a directory and files would be moving to the root directory. Then using command `mkdir .ssh` then moving into the directory and creating files named `id_rsa` and `id_rsa.pub` with command `touch id_rsa | touch id_rsa.pub`. Next, we will use the commit to move the contents from it to the `id_rsa` and `id_rsa.pub`. The commands used are `git show abdea0ebb21b156c01f7533cea3b895c26198c98:.ssh/.deploy > ~/.ssh/id_rsa` for the private key and then use command `git show abdea0ebb21b156c01f7533cea3b895c26198c98:.ssh/.deploy.pub > ~/.ssh/id_rsa.pub` for the public key. Which we will need both in order to connect to the other container. Next command is the `git push`. Command used `git push git@gitlab.flag.net.internal:/rings-of-powder/wordpress.flag.net.internal.git`. This will update the repo with anything that has changed. 
+
+![image10](https://github.com/visionthex/SANS2022-Holiday-Hack-Challange/blob/main/Images/TheElfenRingImages/image10.jpg "Command: git push git@gitlab.flag.net.internal:/rings-of-powder/wordpress.flag.net.internal.git")
+
+Once that is updated, we will look for anything important in the logs like directory's or ssh login paths. This can be used in order to do a ssh season with another container. The directory found was `/etc/gitlab-runner/hhc22-wordpress-deploy` and the ssh connection path is `root@wordpress.flag.net.internal:/var/www/html`.
+
+![image11](https://github.com/visionthex/SANS2022-Holiday-Hack-Challange/blob/main/Images/TheElfenRingImages/image11.jpg "ssh -i /etc/gitlab-runner/hhc22-wordpess-deploy | root@wordpress.flag.net.internal:/var/www/html")
+
+Here we will need to go into our repo and find a `.yml` file in order to write a script to get a listener. The best file to modify would be `.gitlab-ci.yml`. We will need to add a netcat listener to the script while add our own IP address in order to the listener to connect to which is `172.18.0.99`.
+
+![image12](https://github.com/visionthex/SANS2022-Holiday-Hack-Challange/blob/main/Images/TheElfenRingImages/image12.jpg "The local machines IP address - inet addr: 172.18.0.99")
+
+We will need to use nano to edit the `.gitlab-ci.yml` file. Here we can add the netcat listener before the rsync script. If we do not add it before the listerner will not capture a connection. We need an advent to happen in order to get a connection to the container. Here is a snippet of the `.gitlab-ci.yml file`:
+
+![image13](https://github.com/visionthex/SANS2022-Holiday-Hack-Challange/blob/main/Images/TheElfenRingImages/image13.jpg ".gitlab-ci.yml script")
+
+After that has been modified and saved in nano, the next step is to commit the file back to the repo. We will use the command `git commit -am "4GLORY"`. But we run into an issue, we will need to add the username and email address to the git config global. If we remember the last git show we did we can see the author and of the commit which we can use for the git config global command. The command we will use is `git config --global user.email "sporx@kringlecon.com" | git config --global user.name "knee-oh"`. Then we will `git commit -am "4GLORY"` one more time.
+
+![image14](https://github.com/visionthex/SANS2022-Holiday-Hack-Challange/blob/main/Images/TheElfenRingImages/image14.jpg "Command: git commit =am '4GLORY'")
+
+`user.name: knee-oh | user.email: sporx@kringlecon.co`
+
+![image15](https://github.com/visionthex/SANS2022-Holiday-Hack-Challange/blob/main/Images/TheElfenRingImages/image15.jpg "Command: git config --global user.email 'sporx@kringlecon.com | git config --global user.name 'knee-oh'")
+
+![image16](https://github.com/visionthex/SANS2022-Holiday-Hack-Challange/blob/main/Images/TheElfenRingImages/image16.jpg "Command: git commit -am '4GLORY'")
+
+The next step after it has been committed is to run the command `git push && nc -lvp 5555`
+
+![image17](https://github.com/visionthex/SANS2022-Holiday-Hack-Challange/blob/main/Images/TheElfenRingImages/image17.jpg "Command: git push && nc -lvp 5555")
+
+Now that I have a listener established on the other container, I will be able to pivot from here to the gitlab-runner container.
+
+![image18](https://github.com/visionthex/SANS2022-Holiday-Hack-Challange/blob/main/Images/TheElfenRingImages/image18.jpg)
+
+The next command I will need to run in order to pivot will be command `ssh -i /etc/gitlab-runner/hhc22-wordpress.deploy root@wordpress.flag.net.internal`. Once I have connection with this machine, I should have root over the wordpress server.
+
+![image19](https://github.com/visionthex/SANS2022-Holiday-Hack-Challange/blob/main/Images/TheElfenRingImages/image19.jpg)
+
+Once connected I am in the root directory and will need to move into the next directory using command `cd /`. Here we can see that there is a flag.txt file that looks interesting. The command used to see what is inside that file is cat flag.txt.
+
+![image20](https://github.com/visionthex/SANS2022-Holiday-Hack-Challange/blob/main/Images/TheElfenRingImages/image20.jpg)
+![image21](https://github.com/visionthex/SANS2022-Holiday-Hack-Challange/blob/main/Images/TheElfenRingImages/image21.jpg "Flag oI40zIuCcN8c3MhKgQjOMN8lfYtVqcKT")
+
+Now we have captured the flag within WordPress Server.
+
+[Top](#top)
