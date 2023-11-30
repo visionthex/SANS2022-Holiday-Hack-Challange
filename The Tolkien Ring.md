@@ -6,7 +6,7 @@
 
 - [Wireshark Phishing](#wireshark)
 - [Windows Event Logs](#windows)
-- [Suricata Regatta](#center)
+- [Suricata Regatta](#suricata)
 
 <h3 id="wireshark">Wireshark Phishing</h3>
 
@@ -71,3 +71,31 @@ Was the original file deleted? No, it was not deleted, but modified by the attac
 What is the Event ID of the log that shows the actual command line used to delete the file? This was `[Event 4104]`
 
 What is the secret ingredient? The secret ingredient was Honey before it was modified and turned to Fish Oil.
+
+<h3 id="suricata">Suricata Regatta</h3>
+
+Use your investigative analysis skills and the suspicious.pcap file to help develop Suricata rules for the Elves! There is a breif list of rules started in suricata.rules in your home directory. First off, the STINC (Santa's Team of Intelligent Naughty Catchers) has a lead for us. They have some Dridex indicators of compromise to check out. First, please create a Suricata rule to catch DNS lookups for adv.epostoday.uk. Whenever there is a match, the alert message (msg) should read Known bad DNS lookup, possible Dridex Infection. Good luck, and thanks for helping save the North Pole!
+
+This was the first attempt at creating rules. I was able to create the first alert event while referencing the link provided. [6.1.Rules Format - Suricata 6.0.0 Documentation](https://docs.suricata.io/en/suricata-6.0.0/rules/intro.html).
+
+```Rule 1: alert dns $HOME_NET any -> any any (msg:"Known bad DNS lookup, possible Dridex Infection."; dns_query; content:"adv.epostoday.uk";)```
+
+![Image12](https://github.com/visionthex/SANS2022-Holiday-Hack-Challange/blob/main/Images/TheTolkienRing/image12.jpg "Command: ./rule_checker against First Rule")
+
+STINC thanks you for you work with the DNS record! In this PCAP, it points to `192.185.57.242`. Develop a Suricata rule that alerts whenever the infected IP address communicates with internal systems over HTTP. When there is a match, the message (msg) should read Investigate suspicious connections, possible Dridex Infection. This is what I was able to come up with for my second rule for HTTP traffic with the referenced IP address.
+
+```Rule 2: alert http 192.185.57.242 any <> any any (msg:"Investigate suspicious connections, possible Dridex Infection."; sid:19; rev:1;)```
+
+![Image13](https://github.com/visionthex/SANS2022-Holiday-Hack-Challange/blob/main/Images/TheTolkienRing/image13.jpg "Command: ./rule_checker against Second Rule")
+
+We heard that some naughty actors are using TLS certificates with a specific CN. Develop a Suricata rule to match and alert on an SSL certificate for heardbellith.icanwepeh.nagoya. When your rule matches, the message (msg) should read Investigate bad certificates, possible Dridex Infection. For the third rule was able to solve for the TLS certificate.
+
+```Rule 3: alert tls any any -> any any (msg:"Investigate bad certificates, possible Dridex Infection."; tls.subject:"CN=heardbellith.icanwepeh.nagoya"; sid:200012;)```
+
+![Image14](https://github.com/visionthex/SANS2022-Holiday-Hack-Challange/blob/main/Images/TheTolkienRing/image14.jpg "Command: ./rule_checker against Third Rule")
+
+Ok, one more to rule them all and in the darkness find them. Let's watch for one line from the JavaScript: `let byteCharacters = atob` oh, and that string might be GZIP compressed - I hope that's Ok! Just in case they try this again, please alert on that HTTP data with the message Suspicious JavaScript function, possible Dridex Infection. The fourth one I was having a hard time trying to come up with a good rule. That after doing some more research on how to decompress a file in a rule. I was able to come up with this set rule.
+
+```Rule 4: alert http any any -> any any (msg:"Suspicious JavaScript function, possible Dridex Infection."; http.response_body; content:"let byteCharacters = atob"; sid:10054;)```
+
+[Return](https://github.com/visionthex/SANS2022-Holiday-Hack-Challange/blob/main/SANSHHC.md)
