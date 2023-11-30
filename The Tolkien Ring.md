@@ -1,7 +1,7 @@
 [Return](https://github.com/visionthex/SANS2022-Holiday-Hack-Challange/blob/main/SANSHHC.md)
 
-#The Tolkien Ring
-##Wireshark Phishing
+# The Tolkien Ring
+## Wireshark Phishing
 
 This all started when I clicked on a link in my email. Can you help me? Yes, I would be able to help you with this situation.
 <br>
