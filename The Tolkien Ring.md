@@ -1,4 +1,4 @@
-[Return](https://duckduckgo.com)
+[Return]([https://duckduckgo.com](https://github.com/visionthex/SANS2022-Holiday-Hack-Challange/blob/main/SANSHHC.md))
 
 #The Tolkien Ring
 ##Wireshark Phishing
