@@ -8,6 +8,8 @@
 - [Windows Event Logs](#windows)
 - [Suricata Regatta](#suricata)
 
+
+
 <h3 id="wireshark">Wireshark Phishing</h3>
 
 This all started when I clicked on a link in my email. Can you help me? Yes, I would be able to help you with this situation.
@@ -40,6 +42,8 @@ To find the Country Codes I referenced the ISO3166 to convert the codes to an ac
 
 Is the host infected? This would definitely be a Yes, that the host is infected.
 
+
+
 <h3 id="windows">Windows Event Logs</h3>
 
 Grinchum successfully downloaded his keylogger and has gathered the `admin credent[0/0]`. We think he used PowerShell to find the Lembanh recipe and steal our secret ingredient. Luckily, we enabled PowerShell auditing and have exported the Windows PowerShell logs to a flat text file. Please help me analyze this file and answer my questions. Ready to being the epic quest? I am always ready to solve questions that need to be answered.
@@ -71,6 +75,8 @@ Was the original file deleted? No, it was not deleted, but modified by the attac
 What is the Event ID of the log that shows the actual command line used to delete the file? This was `[Event 4104]`
 
 What is the secret ingredient? The secret ingredient was Honey before it was modified and turned to Fish Oil.
+
+
 
 <h3 id="suricata">Suricata Regatta</h3>
 
