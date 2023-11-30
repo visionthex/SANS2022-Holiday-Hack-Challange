@@ -6,7 +6,7 @@
 This all started when I clicked on a link in my email. Can you help me? Yes, I would be able to help you with this situation.
 There are objects in the PCAP file that can be exported by Wireshark. What type of object can be exported from this PCAP? You will need to go to `File > Export Object > HTTP`
 
-![Exported files that can be analyzed further](https://github.com/visionthex/SANS2022-Holiday-Hack-Challange/blob/main/Images/TheTolkienRing/image1.jpg "Exported files that can be analyzed further)
+![Exported files that can be analyzed further](https://github.com/visionthex/SANS2022-Holiday-Hack-Challange/blob/main/Images/TheTolkienRing/image1.jpg "Exported files that can be analyzed further")
 
 What is the file name of the largest file we can export? This would be the 808kB app.php file
 What packet number starts that app.php file? This packet would be #687
