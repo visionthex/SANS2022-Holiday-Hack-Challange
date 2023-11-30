@@ -4,11 +4,11 @@
 
 #### Table of Contents
 
-- [Wireshark Phishing](#Wireshark)
+- [Wireshark Phishing](#wireshark)
 - [Windows Event Logs](#indent)
 - [Suricata Regatta](#center)
 
-<h3 id="Wireshark">Wireshark Phishing</h3>
+<h3 id="wireshark">Wireshark Phishing</h3>
 
 This all started when I clicked on a link in my email. Can you help me? Yes, I would be able to help you with this situation.
 <br>
@@ -27,3 +27,7 @@ What is the IP of the Apache server? Clicking on Packet#687 directed me to the I
 ![Image3](https://github.com/visionthex/SANS2022-Holiday-Hack-Challange/blob/main/Images/TheTolkienRing/image3.jpg "The IP Address to the Apache Server")
 
 What file is saved to the infected host? When you open the saved app.php in VBCode you will be able to see the file name at the end of the script. This file would be Ref_Sept24-2022.zip
+
+![Image4](https://github.com/visionthex/SANS2022-Holiday-Hack-Challange/blob/main/Images/TheTolkienRing/image4.jpg "app.php script | File: Ref_Sept.24-2020.zip")
+
+Attackers used bad TLS certificates in the traffic. Which countries where they registered to? To find this answer you would need to do a little digging on how to get the set of TLS certificates which is a handshake with the server. I The SSL/TLS handshake | Packet Analysis with Wireshark and find the server certificate for a Wireshark filter. I used this filter in Wireshark `ssl.handshake.type == 11`
