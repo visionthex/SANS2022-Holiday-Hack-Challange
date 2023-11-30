@@ -14,8 +14,6 @@ We just need you to clone one repo: `git clone git@haugfactory.com:asnowball/aws
 
 ![image1](https://github.com/visionthex/SANS2022-Holiday-Hack-Challange/blob/main/Images/TheElfenRingImages/image1.jpg "Git Command: git clone <repository-url> <directory>")
 
-<br>
-
 ![image2](https://github.com/visionthex/SANS2022-Holiday-Hack-Challange/blob/main/Images/TheElfenRingImages/image2.jpg "Command: cd aws_scripts | ls | cat README.md")
 
 Once the repo was cloned, I was able to go into the directory and find the README.md file. Here, I am able to cat or nano into the file and read its contents. Using the cat command, I was able to see what the last word within the contents which was Maintainer. `Command: cat README.md`.
