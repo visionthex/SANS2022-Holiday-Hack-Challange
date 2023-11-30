@@ -1,4 +1,4 @@
-[Return](https://github.com/visionthex/SANS2022-Holiday-Hack-Challange/blob/main/SANSHHC.md)
+[Return](https://github.com/visionthex/SANS2022-Holiday-Hack-Challange/blob/main/README.md)
 
 # The Tolkien Ring
 
@@ -104,4 +104,4 @@ Ok, one more to rule them all and in the darkness find them. Let's watch for one
 
 ```Rule 4: alert http any any -> any any (msg:"Suspicious JavaScript function, possible Dridex Infection."; http.response_body; content:"let byteCharacters = atob"; sid:10054;)```
 
-[Return](https://github.com/visionthex/SANS2022-Holiday-Hack-Challange/blob/main/SANSHHC.md)
+[Return](https://github.com/visionthex/SANS2022-Holiday-Hack-Challange/blob/main/README.md)
