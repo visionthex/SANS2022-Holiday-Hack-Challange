@@ -1,5 +1,5 @@
 # SANS 2022 Holiday Hack Challange
-![SANS Holiday Hack Main Page](/assets/images/tux.png)
+![SANS Holiday Hack Main Page](https://github.com/visionthex/SANS2022-Holiday-Hack-Challange/blob/main/Images/Main.jpg)
 
 Report
 <br>
