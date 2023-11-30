@@ -63,7 +63,9 @@ After storing the altered file contents into the variable, the attacker used the
 The attacker ran the previous command against a file multiple time. What is the name of this file. This file that was run multiple times would be the Recipe.txt file.
 
 ![Image10](https://github.com/visionthex/SANS2022-Holiday-Hack-Challange/blob/main/Images/TheTolkienRing/image10.jpg "File: Recipe.txt")
+
 <br>
+
 ![Image11](https://github.com/visionthex/SANS2022-Holiday-Hack-Challange/blob/main/Images/TheTolkienRing/image11.jpg "Deleted Files")
 
 Was the original file deleted? No, it was not deleted, but modified by the attacker.
