@@ -104,4 +104,4 @@ Ok, one more to rule them all and in the darkness find them. Let's watch for one
 
 ```Rule 4: alert http any any -> any any (msg:"Suspicious JavaScript function, possible Dridex Infection."; http.response_body; content:"let byteCharacters = atob"; sid:10054;)```
 
-[Top](https://github.com/visionthex/SANS2022-Holiday-Hack-Challange/edit/main/Chapters/TheTolkienRing.md)
+[Top](https://github.com/visionthex/SANS2022-Holiday-Hack-Challange/blob/main/Chapters/TheTolkienRing.md)
