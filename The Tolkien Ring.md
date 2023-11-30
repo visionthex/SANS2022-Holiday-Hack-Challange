@@ -5,12 +5,11 @@
 #### Table of Contents
 
 - [Wireshark Phishing](#Wireshark)
-- [Indent](#indent)
-- [Center](#center)
-- [Color](#color)
+- [Windows Event Logs](#indent)
+- [Suricata Regatta](#center)
 
 ## Wireshark Phishing
-#Wireshark
+
 This all started when I clicked on a link in my email. Can you help me? Yes, I would be able to help you with this situation.
 <br>
 There are objects in the PCAP file that can be exported by Wireshark. What type of object can be exported from this PCAP? You will need to go to `File > Export Object > HTTP`
