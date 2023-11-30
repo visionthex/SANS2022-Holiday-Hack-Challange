@@ -45,3 +45,29 @@ Is the host infected? This would definitely be a Yes, that the host is infected.
 Grinchum successfully downloaded his keylogger and has gathered the `admin credent[0/0]`. We think he used PowerShell to find the Lembanh recipe and steal our secret ingredient. Luckily, we enabled PowerShell auditing and have exported the Windows PowerShell logs to a flat text file. Please help me analyze this file and answer my questions. Ready to being the epic quest? I am always ready to solve questions that need to be answered.
 
 What month/day/year did the attack take place? This would be around 12/24/2022 where there was a suspicious Remote Execution Command.
+
+![Image6](https://github.com/visionthex/SANS2022-Holiday-Hack-Challange/blob/main/Images/TheTolkienRing/image6.jpg "Windows Event Logs | Execute a Remote Command | Event ID 4104")
+
+An attacker got a secret from a file. What was the original files' name? The command used to find this was grep recipe `powershell.evtx.log` which returned with the file name `recipe_update.txt`.
+
+![Image7](https://github.com/visionthex/SANS2022-Holiday-Hack-Challange/blob/main/Images/TheTolkienRing/image7.jpg "Command: grep recipe powershell.evtx.log | recipe_update.txt")
+
+The contents of the previous file where retrieved, changed, and stored to a variable by the attacker. This was done multiple times. Submit the last full PowerShell line that performed only these actions. The command used to search for this was `grep -E "Get-Content|Set-Content" powershell.evtx.log` which inturn gave me this `$foo = Get-Content .\Recipe|% {$_-replace 'honey', 'fish oil'} $foo | Add-Content -Path 'recipe_updated.txt'`.
+
+![Image8](https://github.com/visionthex/SANS2022-Holiday-Hack-Challange/blob/main/Images/TheTolkienRing/image8.jpg "The returned grep command for Get-Content|Set-Content")
+
+After storing the altered file contents into the variable, the attacker used the variable to run a separate command that wrote the modified data to a file. This was done multiple times. Submit the last full PowerShell line that performed only this action. After doing some more grep commands I was able to find the last performed action. `grep -E "recipe_update|foo" powershell.evtx.log`.
+
+![Image9](https://github.com/visionthex/SANS2022-Holiday-Hack-Challange/blob/main/Images/TheTolkienRing/image9.jpg "Command: grep -E 'recipe_update | foo' powershell.evtx.log")
+
+The attacker ran the previous command against a file multiple time. What is the name of this file. This file that was run multiple times would be the Recipe.txt file.
+
+![Image10](https://github.com/visionthex/SANS2022-Holiday-Hack-Challange/blob/main/Images/TheTolkienRing/image10.jpg "File: Recipe.txt")
+<br>
+![Image11](https://github.com/visionthex/SANS2022-Holiday-Hack-Challange/blob/main/Images/TheTolkienRing/image11.jpg "Deleted Files")
+
+Was the original file deleted? No, it was not deleted, but modified by the attacker.
+
+What is the Event ID of the log that shows the actual command line used to delete the file? This was `[Event 4104]`
+
+What is the secret ingredient? The secret ingredient was Honey before it was modified and turned to Fish Oil.
