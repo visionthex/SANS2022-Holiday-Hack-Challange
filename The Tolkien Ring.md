@@ -5,7 +5,7 @@
 #### Table of Contents
 
 - [Wireshark Phishing](#wireshark)
-- [Windows Event Logs](#indent)
+- [Windows Event Logs](#windows)
 - [Suricata Regatta](#center)
 
 <h3 id="wireshark">Wireshark Phishing</h3>
@@ -36,6 +36,12 @@ Attackers used bad TLS certificates in the traffic. Which countries where they r
 
 After some digging, I was able to find the country code. It was reference under `Transport Layer Security > TLSv1.2 Record Layer: Handshake Protocol > Handshake Protocol: Certificate > Certificate: ASCII Hash > signedCertificate > subject: rdnSequence (0) > rndSequence: > RDNSequence Item: with CounryName = [IE, IL, SS, US]`
 
-To find the Country Codes I referenced the ISO3166 to convert the codes to an actual name of the Country that it references to: Online Browsing Platform (OBP) ISO.org The countries that corresponds to the RDNSequence Country Names: [IE = Ireland, IL = Israel, SS = South Sudan, US = United States]
+To find the Country Codes I referenced the ISO3166 to convert the codes to an actual name of the Country that it references to: [Online Browsing Plateform (OBP) ISO.org](https://www.iso.org/obp/ui/#search) The countries that corresponds to the RDNSequence Country Names: [IE = Ireland, IL = Israel, SS = South Sudan, US = United States]
 
 Is the host infected? This would definitely be a Yes, that the host is infected.
+
+<h3 id="windows">Windows Event Logs</h3>
+
+Grinchum successfully downloaded his keylogger and has gathered the `admin credent[0/0]`. We think he used PowerShell to find the Lembanh recipe and steal our secret ingredient. Luckily, we enabled PowerShell auditing and have exported the Windows PowerShell logs to a flat text file. Please help me analyze this file and answer my questions. Ready to being the epic quest? I am always ready to solve questions that need to be answered.
+
+What month/day/year did the attack take place? This would be around 12/24/2022 where there was a suspicious Remote Execution Command.
