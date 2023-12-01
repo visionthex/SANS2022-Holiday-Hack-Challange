@@ -54,7 +54,7 @@ Using the clue that was given, I was able to clone the repository of the `gitlab
 
 ![image7](https://github.com/visionthex/SANS2022-Holiday-Hack-Challange/blob/main/Images/TheElfenRingImages/image7.jpg "Command: ls")
 
-In order for me to mover further I would have to reference how to start using git and using git with ssh. Once, I am in the cloned repository for `wordpress.flag.net.internal` I would be able to use the command git log in order to get a log of what commits where pushed to the Git-Lab repository.
+In order for me to mover further I would have to reference how to [start using git](https://docs.gitlab.com/ee/gitlab-basics/start-using-git.html) and [using git with ssh](https://docs.gitlab.com/ee/user/ssh.html). Once, I am in the cloned repository for `wordpress.flag.net.internal` I would be able to use the command git log in order to get a log of what commits where pushed to the Git-Lab repository.
 
 ![image8](https://github.com/visionthex/SANS2022-Holiday-Hack-Challange/blob/main/Images/TheElfenRingImages/image8.jpg "Command: git log | shows the log of commits")
 
