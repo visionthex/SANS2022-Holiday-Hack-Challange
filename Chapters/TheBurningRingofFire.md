@@ -24,7 +24,9 @@ The Hats Wallet Address, KC Cost, and ID#
 From here we go back to the KTM and purchase ourselves a hat. We go to approve a KringleCoin transfer. We add the "To" address the KC amount and your Wallets key hash.
 
 > "To" Address: 0xa <----The Hats Wallet Address
+> 
 > Amount (KC): 10 <----The KringleCoin cost amount
+> 
 > Your Key: 0xf <----Your Wallets Key Hash
 
 Then after we go back to the Hat Vending Machine and click on the Click here to buy. You would need to add your Wallet Address and Hat ID then Click on Make your purchase!
@@ -45,6 +47,7 @@ Block# 61032
 Use the Blockchain Explorer in the Burning Ring of Fire to investigate the contracts and transactions on the chain. At what address is the KringleCoin smart contract deployed? This will be Block# 4
 
 > Wallet: 0x8B86BB82b4b0a7C085d64B86aF6B6d99150f92a1
+> 
 > KringleCoin Contract Address: 0xc27A2D3DE339Ce353c0eFBa32e948a88F1C86554
 
 No alt text provided for this image
@@ -58,7 +61,9 @@ No alt text provided for this image
 BoredSporc Gallery
 
 > BoredSporc Addresses
+> 
 > BSRS_nft Contract Address: 0x36A3d1182Cf6C15D93E47EF3E27272BFA0E8612A
+> 
 > RSRS_nft Wallet: 0xe8fC6f6a76BE243122E3d01A1c544F87f1264d3a
 
 Find Proof Values: In order to find proof values, I started to look into the source code of the Bored Sporc website.
@@ -79,6 +84,7 @@ Merkel_tree.py Script
 Once I was able to modify the one line of code with my Wallet Address Hash the next this would be to save the script and run it. The command used to run the script is `python merkle_tree.py`. The python script was able to provide me with the Root and Proof that I need to send a POST request to the website. Now that we know 
 
 > Root : 0x19ec6a4d480aa86cd7392c6ca10909a4e262822ff997f9aac0c81f287cc4ca52
+> 
 > Proof : 0x5380c7b7ae81a58eb98d9c78de4a1fd7fd9535fc953ed2be602daaa41767312a
 
 we can take this information and plug it into the POST request with my Wallet ID Hash within the JSON script.
