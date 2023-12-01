@@ -22,7 +22,7 @@ Once the repo was cloned, I was able to go into the directory and find the READM
 
 Greetings Noble Player, 
 
-Your yourself in a jail with a recently captured Dwarven Elf. He desperately asks your help in escaping for he is on a quest to aid a friend in a search for treasure inside a crypto-mine. If you can help him break free of his containment, he claims you would receive "MUCH GLORY!" 
+Your yourself in a jail with a recently captured Dwarven Elf. He desperately asks your help in escaping for he is on a quest to aid a friend in a search for treasure inside a crypto-mine. If you can help him break free of his containment, he claims you would receive "__MUCH GLORY!__" 
 
 The first step was to create a disk which I used the command `fdisk -l` but I also noticed that I had to be rooted in order to use the command. Next was to mount the drive using the command mount `/dev/vda /mnt`. Then moved into the `/mnt/` directory and be able to see what was inside.
 
@@ -44,7 +44,7 @@ Greetings Noble Player,
 
 Many thanks for answering our desperate cry for help! You may have heard that some evil Sporcs have opened a webstore selling counterfeit banners and flags of the many noble houses found in the land of the North! They have leveraged some dastardly technology to power their storefront, and this technology is known as PHP! 
 
-***gasp*** 
+**gasp**
 
 This storefront utilizes a truly despicable number of resources to keep the website up. And there is only a certain type of Christmas Magic capable of powering such a thing… an Elven Ring! Along with PHP there is something new we've not yet seen in our land. A technology called Continuous Integration and Continuous Deployment! Be wary! Many fair elves have suffered greatly but in doing so, they've managed to secure you a persistent connection on an internal network. BTW take excellent notes! Should you lose your connection or be discovered and evicted the elves can work to re-establish persistence. In fact, the sound off fans and the sag in lighting tells me all the systems are booting up again right now. Please, for the sake of our Holiday help us recover the Ring and save Christmas!
 
