@@ -26,6 +26,8 @@
 > 
 > One player to bring them all, and Santa Claus to bind them
 
+<br>
+
 ![image1](https://github.com/visionthex/SANS2022-Holiday-Hack-Challange/blob/main/Images/KringleconImages/image1.jpg "Inside the Castle")
 
 ![image2](https://github.com/visionthex/SANS2022-Holiday-Hack-Challange/blob/main/Images/KringleconImages/image2.png "The Five Rings")
