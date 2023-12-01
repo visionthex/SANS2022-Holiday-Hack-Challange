@@ -1,5 +1,14 @@
-# The Burning Ring of Fire
-## Buy a Hat
+[Return](https://github.com/visionthex/SANS2022-Holiday-Hack-Challange/blob/main/README.md) | [The Tolkien Ring](https://github.com/visionthex/SANS2022-Holiday-Hack-Challange/blob/main/Chapters/TheTolkienRing.md) | [The Elfen Ring](https://github.com/visionthex/SANS2022-Holiday-Hack-Challange/blob/main/Chapters/TheElfenRing.md) | [The Web Ring](https://github.com/visionthex/SANS2022-Holiday-Hack-Challange/blob/main/Chapters/TheWebRing.md) | [The Cloud Ring](https://github.com/visionthex/SANS2022-Holiday-Hack-Challange/blob/main/Chapters/TheCloudRing.md) | [The Burning Ring of Fire](https://github.com/visionthex/SANS2022-Holiday-Hack-Challange/blob/main/Chapters/TheBurningRingofFire.md) | [Kringlecon](https://github.com/visionthex/SANS2022-Holiday-Hack-Challange/blob/main/Chapters/Kringlecon.md)
+
+<h1 id="top">The Burning Ring of Fire</h1>
+
+#### Table of Contents
+
+- [Buy a Hat](#hat)
+- [Blockchain Divination](#blockchain)
+- [Exploit a Smart Contract](#smart)
+
+<h3 id="hat">Buy a Hat</h3>
 
 Travel to the Burning Ring of Fire and purchase a hat from the vending machine with KringleCoin.
 
@@ -32,6 +41,7 @@ From here we go back to the KTM and purchase ourselves a hat. We go to approve a
 Then after we go back to the Hat Vending Machine and click on the Click here to buy. You would need to add your Wallet Address and Hat ID then Click on Make your purchase!
 
 > Your Wallet Address: 0xD <----Your Wallets Address Hash
+> 
 > Hat ID:86 <----The Hats ID Number
 
 After the purchase goes through you will receive a Transaction ID for the Hat. 0x7 with a `Block# 61032` and can be viewed at the Blockchain Explorer. Once that is done you can access your hat and wear it just like me.
@@ -42,7 +52,7 @@ KringleCon Character with a Crypto Bought Hat
 No alt text provided for this image
 Block# 61032
 
-## Blockchain Divination
+<h3 id="blockchain">Blockchain Divination</h3>
 
 Use the Blockchain Explorer in the Burning Ring of Fire to investigate the contracts and transactions on the chain. At what address is the KringleCoin smart contract deployed? This will be Block# 4
 
@@ -53,7 +63,7 @@ Use the Blockchain Explorer in the Burning Ring of Fire to investigate the contr
 No alt text provided for this image
 Block# 4
 
-## Exploit a Smart Contract
+<h3 id="smart">Exploit a Smart Contract</h3>
 
 Exploit flaws in a smart contract to buy yourself a Bored Sporc NFT. Resources used for Merkel Tree.
 
