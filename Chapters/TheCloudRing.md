@@ -9,7 +9,7 @@
 
 <h3 id="aws">AWS CLI Intro</h3>
 
-You may not know this, but AWS CLI help messages are very easy to access. First, try typing: aws help. Next, please configure the default aws cli credentials: From here I would reference __AWS website__ for steps on configuring the console. The command used would be aws configure.
+You may not know this, but AWS CLI help messages are very easy to access. First, try typing: aws help. Next, please configure the default aws cli credentials: From here I would reference [AWS website](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-configure.html) for steps on configuring the console. The command used would be aws configure.
 
 No alt text provided for this image
 Command: aws configure
@@ -28,7 +28,7 @@ AWS Credentials | put_policy.py
 
 <h3 id="exploit">Exploitation via AWS CLI</h3>
 
-Use Trufflehog to find credentials in the Gitlab instance at __asnowball__. Configure these credentials for `us-east-1` and then run the command. The command that I used was `git clone https://haugfactory.com/asnowball/aws_scripts.git`. I was able to clone the repo with git clone and open the directory showing the files inside.
+Use Trufflehog to find credentials in the Gitlab instance at [asnowball](https://haugfactory.com/orcadmin/aws_scripts). Configure these credentials for `us-east-1` and then run the command. The command that I used was `git clone https://haugfactory.com/asnowball/aws_scripts.git`. I was able to clone the repo with git clone and open the directory showing the files inside.
 
 No alt text provided for this image
 Commands: git clone https://haugfactory.com/asnowball/aws_scripts.git | cd aws_scripts | ls
