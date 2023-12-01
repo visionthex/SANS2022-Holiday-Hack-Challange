@@ -21,7 +21,7 @@ Excellent! To finish, please get your caller identity using the aws command line
 
 Use Trufflehog to find secrets in a Git Repo. Work with Jill Underpole in the Cloud Ring. What's the name of the file that has AWS Credentials? After some searching on the Gitlab websites repo I was able to find the file that had the credentials which is `put_policy.py`.
 
-![image3](https://github.com/visionthex/SANS2022-Holiday-Hack-Challange/blob/main/Images/TheCloudRingImages/image3.jpg "AWS Credentials | put_policy.py")
+![image3](https://github.com/visionthex/SANS2022-Holiday-Hack-Challange/blob/main/Images/TheCloudRingImages/image3.png "AWS Credentials | put_policy.py")
 
 <h3 id="exploit">Exploitation via AWS CLI</h3>
 
