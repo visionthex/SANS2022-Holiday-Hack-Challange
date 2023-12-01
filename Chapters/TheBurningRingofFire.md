@@ -65,7 +65,7 @@ Block# 4
 
 <h3 id="smart">Exploit a Smart Contract</h3>
 
-Exploit flaws in a smart contract to buy yourself a Bored Sporc NFT. Resources used for Merkel Tree.
+Exploit flaws in a smart contract to buy yourself a Bored Sporc NFT. Resources used for [Merkel Tree](https://github.com/QPetabyte/Merkle_Trees/tree/4cd2896c273ff4836126d8fd39de4b2fd3028bb0).
 
 No alt text provided for this image
 BoredSporc Gallery
