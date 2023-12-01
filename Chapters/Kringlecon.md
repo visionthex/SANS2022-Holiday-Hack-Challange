@@ -1,5 +1,7 @@
 [Return](https://github.com/visionthex/SANS2022-Holiday-Hack-Challange/blob/main/README.md) | [The Tolkien Ring](https://github.com/visionthex/SANS2022-Holiday-Hack-Challange/blob/main/Chapters/TheTolkienRing.md) | [The Elfen Ring](https://github.com/visionthex/SANS2022-Holiday-Hack-Challange/blob/main/Chapters/TheElfenRing.md) | [The Web Ring](#suricata) | [The Cloud Ring](#suricata) | [The Burning Ring of Fire](#suricata) | [Kringlecon](https://github.com/visionthex/SANS2022-Holiday-Hack-Challange/blob/main/Chapters/Kringlecon.md)
 
+<a href="https://github.com/visionthex/SANS2022-Holiday-Hack-Challange/blob/main/README.md" target="_blank">Return</a> | 
+
 <h1 id="top">Kringlecon</h3>
 
 #### Table of Contents
