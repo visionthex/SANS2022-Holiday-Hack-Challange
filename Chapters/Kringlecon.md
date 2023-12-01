@@ -8,7 +8,7 @@
 
 <h3 id="final">The Final</h3>
 
-> :: Five Rings for the Christmas king immersed in cold
+> 💡: Five Rings for the Christmas king immersed in cold
 > Each Ring now missing from its zone
 > The first with bread kindly given, not sold
 > Another to find 'ere pipelines get owned
