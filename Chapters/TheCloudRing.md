@@ -55,7 +55,7 @@ The next command used is to get a list of attached user policies under the name 
 
 ![image11](https://github.com/visionthex/SANS2022-Holiday-Hack-Challange/blob/main/Images/TheCloudRingImages/image11.jpg "Command: aws iam list-attached-user-policies --user-name haug")
 
-After some digging around on __AWS Command Reference__, I was able to come up with a command to spit out the policy needed. The command used was `aws iam list-attached-user-policies --user-name haug`. Now we can view the git policy that is attached to the user haug. The command that was used to get policy was `aws iam get-policy --policy-arn arn:aws:iam::602123424321:policy/TIER1_READONLY_POLICY`
+After some digging around on [AWS Command Reference](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iam/list-attached-user-policies.html), I was able to come up with a command to spit out the policy needed. The command used was `aws iam list-attached-user-policies --user-name haug`. Now we can view the git policy that is attached to the user haug. The command that was used to get policy was `aws iam get-policy --policy-arn arn:aws:iam::602123424321:policy/TIER1_READONLY_POLICY`
 
 ![image12](https://github.com/visionthex/SANS2022-Holiday-Hack-Challange/blob/main/Images/TheCloudRingImages/image12.jpg "Command: aws iam get-policy --policy-arn arn:aws:iam::602123424321:policy/TIER1_READONLY_POLICY")
 
