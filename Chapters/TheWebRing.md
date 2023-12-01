@@ -10,7 +10,7 @@
 
 <h3 id="boria">Boria Artifacts</h3>
 
-### Naughty IP:
+#### Naughty IP:
 
 Use the artifacts from Alabaster Snowball to analyze this attack on the Boria mines. Most of the traffic to this site is nice, but one IP address is being naughty! Which is it? After doing some digging around, I was able to find a strange IP address that was acting very suspicious. This IP address stuck out more than other IP addresses. The IP address that was standing out more than others was `18.222.86.32`.
 
@@ -27,21 +27,21 @@ No alt text provided for this image
 
 The best login here would be the `18.222.86.32 --[05/OCT/2022 16:46:41] "POST /login.html HTTP/1.1" 302 -`. Once that he has a good log in, he starts to use a web crawler. Looking into the directories related to the website.
 
-### Credential Mining:
+#### Credential Mining:
 
 The first attack is a brute force login. What is the first username tried? The first username tried would be username Alice as you see below.
 
 No alt text provided for this image
 First username found: username=alice
 
-### 404 FTW:
+#### 404 FTW:
 
 The next attack is forced browsing where the naughty one is guessing URLS. What is the first successful URL path in this attack? The first URL path that I found would be `/proc`.
 
 No alt text provided for this image
 URL path: "GET /proc HTTP/1.1"
 
-### IMDS, XXE, and Other Abbreviations:
+#### IMDS, XXE, and Other Abbreviations:
 
 The last step in this attack was the use of XXE to get secret keys from the IMDS service. What URL did the attacker force the server to fetch? The last URL the attacker was able to force the server to fetch was `http://169.254.169.254/latest/meta-data/identity-credentials/ec2/security-credentials/ec2-instance`. Also, with this HTTP Follow we can see that he was able to obtain the Secret Access Key Hash and Token Hash as seen below.
 
