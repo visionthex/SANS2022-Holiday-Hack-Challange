@@ -134,7 +134,7 @@ After posting the GET request with the added xml script we would get a response 
 
 With this information we can take that URL directory and see what can be obtained from it. So, we will add this to the URL `http://glamtarielsfountain.com/static/images/pholder-morethantopsupersecret63842.png`. We should get an image once we put this in.
 
-![image31](https://github.com/visionthex/SANS2022-Holiday-Hack-Challange/blob/main/Images/TheWebRingImages/image31.jpg "An image of the directory and two files | bluering.txt & redring.txt")
+![image31](https://github.com/visionthex/SANS2022-Holiday-Hack-Challange/blob/main/Images/TheWebRingImages/image31.png "An image of the directory and two files | bluering.txt & redring.txt")
 
 Now that we have the information we need, we can modify the xml code to match the file path and see what we get back. This is what was modified in the xml code.
 
@@ -162,7 +162,7 @@ After posting a GET request, I was able to get a response back about the silver 
 
 From this response I was able to get another file path to add to the URL `http://glamtarielsfountain.com/static/images/x_phial_pholder_2022/redring-supersupersecret928164.png`. This is the file that I got back.
 
-![image38](https://github.com/visionthex/SANS2022-Holiday-Hack-Challange/blob/main/Images/TheWebRingImages/image38.jpg "Red Ring with a directory | goldring_to_be_deleted.txt")
+![image38](https://github.com/visionthex/SANS2022-Holiday-Hack-Challange/blob/main/Images/TheWebRingImages/image38.png "Red Ring with a directory | goldring_to_be_deleted.txt")
 
 This was interesting to find an image with a file directory to check out. We will need to add the file path to the xml code. But before I go any further, I wanted to check out if there was any greenring.txt. Here is the modified XML code.
 
@@ -196,7 +196,7 @@ After posting the GET request this is what was sent back in response.
 
 From here I would need to add this file path to the URL `http://glamtarielsfountain.com/static/images/x_phial_pholder_2022/goldring-morethansupertopsecret76394734.png` and see what we get back.
 
-![image46](https://github.com/visionthex/SANS2022-Holiday-Hack-Challange/blob/main/Images/TheWebRingImages/image46.jpg "The prized Golden Ring")
+![image46](https://github.com/visionthex/SANS2022-Holiday-Hack-Challange/blob/main/Images/TheWebRingImages/image46.png "The prized Golden Ring")
 
 I have finally discovered to prized Golden Ring! I stare into Glamariel's fountain and was presented a file name `goldring-morethansupertopsecret76394734.png`.
 
