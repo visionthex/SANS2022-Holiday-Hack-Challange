@@ -1,6 +1,15 @@
-# The Web Ring
+[Return](https://github.com/visionthex/SANS2022-Holiday-Hack-Challange/blob/main/README.md) | [The Tolkien Ring](https://github.com/visionthex/SANS2022-Holiday-Hack-Challange/blob/main/Chapters/TheTolkienRing.md) | [The Elfen Ring](https://github.com/visionthex/SANS2022-Holiday-Hack-Challange/blob/main/Chapters/TheElfenRing.md) | [The Web Ring](https://github.com/visionthex/SANS2022-Holiday-Hack-Challange/blob/main/Chapters/TheWebRing.md) | [The Cloud Ring](#suricata) | [The Burning Ring of Fire](#suricata) | [Kringlecon](https://github.com/visionthex/SANS2022-Holiday-Hack-Challange/blob/main/Chapters/Kringlecon.md)
 
-## Boria Artifacts
+<h1 id="top">The Web Ring</h1>
+
+#### Table of Contents
+
+- [Boria Artifacts](#boria)
+- [Boria Mine Door](#mine)
+- [Glamtariel's Fountain](#fountain)
+
+<h3 id="boria">Boria Artifacts</h3>
+
 ### Naughty IP:
 
 Use the artifacts from Alabaster Snowball to analyze this attack on the Boria mines. Most of the traffic to this site is nice, but one IP address is being naughty! Which is it? After doing some digging around, I was able to find a strange IP address that was acting very suspicious. This IP address stuck out more than other IP addresses. The IP address that was standing out more than others was `18.222.86.32`.
@@ -39,7 +48,8 @@ The last step in this attack was the use of XXE to get secret keys from the IMDS
 No alt text provided for this image
 Secret Access Key | Token
 
-## Boria Mine Door
+<h3 id="mine">Boria Mine Door</h3>
+
 With the locked door code, I was able to unlock the first frame of the lock. Which is found in the source code of the website. This information was under `<div class="iframes">` `/pin1`. From here you can find the rest of the locked pins that coincide with each other. 
 
 No alt text provided for this image
@@ -103,7 +113,7 @@ No alt text provided for this image
 No alt text provided for this image
 PIN6 Unlocked | Using <SVG> Polygons
 
-## Glamtariel's Fountain
+<h3 id="fountain">Glamtariel's Fountain</h3>
 
 No alt text provided for this image
 Glamtariel's Fountain webAPP
