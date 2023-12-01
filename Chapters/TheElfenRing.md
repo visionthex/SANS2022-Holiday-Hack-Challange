@@ -72,7 +72,7 @@ Once that is updated, we will look for anything important in the logs like direc
 
 Here we will need to go into our repo and find a `.yml` file in order to write a script to get a listener. The best file to modify would be `.gitlab-ci.yml`. We will need to add a netcat listener to the script while add our own IP address in order to the listener to connect to which is `172.18.0.99`.
 
-![image12](https://github.com/visionthex/SANS2022-Holiday-Hack-Challange/blob/main/Images/TheElfenRingImages/image12.jpg "The local machines IP address - inet addr: 172.18.0.99")
+![image12](https://github.com/visionthex/SANS2022-Holiday-Hack-Challange/blob/main/Images/TheElfenRingImages/image12.png "The local machines IP address - inet addr: 172.18.0.99")
 
 We will need to use nano to edit the `.gitlab-ci.yml` file. Here we can add the netcat listener before the rsync script. If we do not add it before the listerner will not capture a connection. We need an advent to happen in order to get a connection to the container. Here is a snippet of the `.gitlab-ci.yml file`:
 
@@ -84,7 +84,7 @@ After that has been modified and saved in nano, the next step is to commit the f
 
 `user.name: knee-oh | user.email: sporx@kringlecon.co`
 
-![image15](https://github.com/visionthex/SANS2022-Holiday-Hack-Challange/blob/main/Images/TheElfenRingImages/image15.jpg "Command: git config --global user.email 'sporx@kringlecon.com | git config --global user.name 'knee-oh'")
+![image15](https://github.com/visionthex/SANS2022-Holiday-Hack-Challange/blob/main/Images/TheElfenRingImages/image15.png "Command: git config --global user.email 'sporx@kringlecon.com | git config --global user.name 'knee-oh'")
 
 ![image16](https://github.com/visionthex/SANS2022-Holiday-Hack-Challange/blob/main/Images/TheElfenRingImages/image16.jpg "Command: git commit -am '4GLORY'")
 
