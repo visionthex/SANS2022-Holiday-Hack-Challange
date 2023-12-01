@@ -18,7 +18,7 @@ The fifth on blockchains where shadows be bold
 One hunt to seek them all, five quests to find them
 One player to bring them all, and Santa Claus to bind them
 
-![image1](https://github.com/visionthex/SANS2022-Holiday-Hack-Challange/blob/main/Images/KringleconImages/image1.jpg "Inside the Castle")
+<center> ![image1](https://github.com/visionthex/SANS2022-Holiday-Hack-Challange/blob/main/Images/KringleconImages/image1.jpg "Inside the Castle") </center>
 
 ![image2](https://github.com/visionthex/SANS2022-Holiday-Hack-Challange/blob/main/Images/KringleconImages/image2.png "The Five Rings")
 
