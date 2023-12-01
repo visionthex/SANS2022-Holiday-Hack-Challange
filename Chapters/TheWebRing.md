@@ -204,8 +204,6 @@ Red Ring with a directory | goldring_to_be_deleted.txt
 
 This was interesting to find an image with a file directory to check out. We will need to add the file path to the xml code. But before I go any further, I wanted to check out if there was any greenring.txt. Here is the modified XML code.
 
-[Top](#top)
-
 No alt text provided for this image
 OWASP XML Injection | greenring.txt
 
@@ -247,3 +245,5 @@ No alt text provided for this image
 The prized Golden Ring
 
 I have finally discovered to prized Golden Ring! I stare into Glamariel's fountain and was presented a file name `goldring-morethansupertopsecret76394734.png`.
+
+[Top](#top)
