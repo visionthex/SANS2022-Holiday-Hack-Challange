@@ -14,11 +14,9 @@
 
 Use the artifacts from Alabaster Snowball to analyze this attack on the Boria mines. Most of the traffic to this site is nice, but one IP address is being naughty! Which is it? After doing some digging around, I was able to find a strange IP address that was acting very suspicious. This IP address stuck out more than other IP addresses. The IP address that was standing out more than others was `18.222.86.32`.
 
-No alt text provided for this image
-WireShark Packet Capture
+![image1](https://github.com/visionthex/SANS2022-Holiday-Hack-Challange/blob/main/Images/TheWebRingImages/image1.png "WireShark Packet Capture")
 
-No alt text provided for this image
-FIN, PSH, ACK 
+![image2](https://github.com/visionthex/SANS2022-Holiday-Hack-Challange/blob/main/Images/TheWebRingImages/image2.jpg "FIN, PSH, ACK")
 
 This was showing a FIN flag on a couple HTTP packets. This IP has been stock in the log in page trying to log in more than once. This shows that the IP was brute forcing their way into the webpage.
 
