@@ -1,7 +1,7 @@
 ![SANS Holiday Hack Main Page](https://github.com/visionthex/SANS2022-Holiday-Hack-Challange/blob/main/Images/Main.jpg)
 <div id="badges">
   <a href="https://www.linkedin.com/in/charles-w-sanders/">
-    <img src="https://github.com/visionthex/SANS2022-Holiday-Hack-Challange/blob/main/Images/R.png" alt="LinkedIn Badge" width="100" height="100"/>
+    <img src="https://github.com/visionthex/SANS2022-Holiday-Hack-Challange/blob/main/Images/R.png" alt="LinkedIn Badge" width="50" height="50"/>
   </a>
 </div>
 
